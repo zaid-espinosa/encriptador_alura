@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <meta name="description" content="Encriptador">
+
+    <!-- Normalize -->
+    <link rel="Preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif&display=swap" rel="stylesheet">
+
+    <!-- Reset -->
+    <link rel="Preload" href="./css/reset.css" as="style">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- Style -->
+    <link rel="Preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/Logo.png" alt="Logo Alura">
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="textoEntrada">
+                <textarea class="mensaje" cols="40" rows="12" placeholder="Ingresa el texto aqui..."></textarea>
+            </div>
+
+            
+                <div class="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="alerta" width="16" height="16" viewBox="0 0 24 24" stroke-width="3" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm.01 13l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -8a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor" />
+                    </svg>
+
+                    <p class="restriccion">Solo letras minúsculas y sin acentos</p>
+                    
+                    <p class="condiciones"></p>
+                </div>
+
+                <div class="botones">
+                    <button class="boton__encriptar" id="btn_encriptar">Encriptar</button>
+                    <button class="boton__desencriptar">Desencriptar</button>
+                </div>
+            
+        </div>
+
+        <div class="areaCopiar">
+            <textarea  class="texto" cols="30" rows="16" readonly></textarea>
+            <div class="img_muneco">
+                <img src="./img/Muñeco.png" alt="Muñeco" class="muneco">
+                
+                <p class="sin">Ningún mensaje fue encontrado</p>
+                <p class="ingresar">Ingrea el texto que desees encriptar o desencriptar</p> 
+            </div>
+            <div class="boton_cop">
+                <button class="boton__copiar">Copiar</button>
+            </div>
+        </div>
+    </main>
+
+   <script src="./app.js"></script>
+   
+</body>
+</html>

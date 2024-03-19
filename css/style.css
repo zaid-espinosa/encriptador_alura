@@ -1,0 +1,229 @@
+:root {
+    /* Fonts */
+    font-family: 'Inter';
+
+    /* Colors */
+    --gray: #F3F5FC;
+    --graybotton: #D8DFE8;
+    --grayAlert: #495057;
+    --blue: #0A3871;
+    
+}
+
+* {
+    box-sizing: border-box;
+    font-size:  62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    background-color: var(--gray);
+    height: 100%;
+}
+
+.logo img {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+main {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 180px;
+    gap: 100px;
+}
+
+
+.container {
+    width: 50%;
+}
+
+.textoEntrada { 
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+   
+}
+
+
+.mensaje {
+    color: var(--blue);
+    font-size: 32px;
+    margin-top: 120px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    width: 100%;
+}
+
+.mensaje::placeholder {
+    color: var(--blue);
+}
+
+
+.alert {
+    color: var(--grayAlert);
+    display: flex;
+    height: 18px;
+    width: 229px;
+    align-items: center;
+}
+
+.restriccion {
+    font-size: 12px;
+    text-align: center;
+}
+
+.botones {
+    width: 100%;
+    display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 20px;
+}
+
+
+.boton__encriptar, 
+.boton__desencriptar,
+.boton__copiar {
+    flex-grow: 1;
+    height: 67px;
+    cursor: pointer;
+    border-radius: 24px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.boton__encriptar, 
+.boton__desencriptar {
+    margin-top: 4%;
+    /* margin-right: 5%; */
+    
+}
+
+.boton_cop {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.boton__encriptar,
+.boton__copiar {
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    
+}
+
+.boton__desencriptar {
+    background-color: white;
+    color: var(--blue);
+    border: var(--blue) solid 1px;
+}
+
+
+
+.img_muneco {
+    position: absolute;
+    bottom: 160px;
+    margin: 10%; 
+    width: 80%;
+}
+
+.muneco {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+
+
+.sin {
+    width: 100%;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ingresar {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.areaCopiar {
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 700px;
+    border-radius: 32px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.texto {
+    color: var(--grayAlert);
+    font-size: 24px;
+    margin: 10%; 
+    width: 80%;
+    margin-top: 120px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+      flex-direction: column; 
+      margin-left: 20px; 
+      margin-top: 40px; 
+      gap: 20px; 
+    }
+
+    .logo img {
+        position: absolute;
+        top: 25px;
+        left: 0px;
+    }
+
+
+    .areaCopiar {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        width: 80%; 
+        max-width: 400px;
+        margin: 5% auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        margin: 0 auto;  
+    }
+
+    .mensaje {
+        margin-top: 30%;
+    }
+    
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .muneco {
+        align-items: center; 
+        justify-content: center; 
+    }
+}
